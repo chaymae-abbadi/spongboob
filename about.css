@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+}
+.center{
+    margin-top: 150px;
+    margin-bottom: 100px;
+    font-size: 100%;
+    position: relative;
+}
+.center h1{
+    position: absolute;
+    color: #a2d6f9;
+    transform: translate(-50%,-50%);
+    font-size: 6em;
+}
+.center h1:nth-child(1){
+    color:transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+}
+.center h1:nth-child(2){
+    color:#03a9f4;
+    animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate{
+    0%,100%{
+        clip-path: polygon(99% 100%, 0% 100%, 0% 57%, 12% 50%, 24% 48%, 35% 55%, 45% 63%, 54% 65%, 63% 63%, 73% 57%, 80% 51%, 88% 48%, 100% 46%);
+    }
+    50%{
+        clip-path: polygon(99% 100%, 0% 100%, 0 72%, 12% 68%, 21% 60%, 29% 49%, 40% 39%, 53% 39%, 63% 46%, 70% 60%, 78% 70%, 89% 73%, 100% 70%);
+    }
+}
+.toggle ion-icon{
+    color: #0084ff;
+    text-decoration: none;
+}
+.toggle{
+    font-size: 30px;
+    display: none;
+}
+.team{
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* margin: 5px; */
+    background: radial-gradient(#0084ff,rgb(13, 0, 84));
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h3{
+    color: #fcf300;
+    height: 50px;
+}
+.h4{
+    height: 250px;
+    margin: 5px;
+}
+
+.div1 h3:hover{
+    color: #ffc600;
+}
+.div1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #a2d6f9;
+    flex-flow: wrap;
+}
+.h{
+    height: 160px;
+    border-radius: 20px;
+}
+.team-content:hover{
+    background-color: #03a9f4;
+    transition: 1s;
+    box-shadow: 5px 5px 5px #fcf300 ;
+    color: #072ac8;
+    transform: scale(1.1);
+}
+.div11{
+    color: blue; 
+    text-align: right;
+    padding: 40px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.a :hover{
+    background-color: #072ac8;
+    color: #a2d6f9;
+}
+.a .about{
+    color: #fcf300;
+}
+.a a{
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 30px;
+    padding: 10px;
+    color: blue;
+    background-color: #1e96fc;
+    box-shadow: 5px 5px 5px blue;
+    transition: .8s;
+}
+.team-content{
+    width: 20%;
+    margin: 8px;
+    margin-bottom: 40px;
+    display: block;
+    align-items: center;
+    transition: 1s;
+    text-align: center;
+    color: #a2d6f9;
+    border-radius: 20px;
+    box-shadow: 8px 8px 8px #03a9f4;
+    margin-top: 4rem;
+}
+.team-content i{
+    color: yellow;
+}
+.team-content img{
+    height: auto;
+    border-radius:15px;
+    margin-bottom: 15px;
+}
+.icons{
+    padding: 10px;
+    border-radius: 20px;
+    border-top: 2px solid #03a9f4;
+}
+.icons ion-icon{
+    color: #fcf300;
+}
+@media screen and (max-width:1200px) {
+    .team-content{
+        width: 40%;
+    }
+    .div1{
+        margin-bottom: 32px;
+    }
+}
+@media screen and (max-width:600px) {
+    .team-content{
+        width: 85%;
+    }
+    .div1{
+        margin-bottom: 32px;
+    }
+    .div11{
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+    .a{
+        display: none;
+        margin-top: 35px;
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .a.active, .toggle{
+        display: block;
+    }
+    .toggle{
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+    .center{
+        font-size: 12px;
+    }
+    .div2{
+        flex-direction: column;
+    }
+    .div2 .d{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+.fin{
+    background-color: rgb(13, 23, 120);
+    height: auto;
+    width: 100%;
+    color: white;
+    border: 1px solid #03a9f4;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+}
+.di1{
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.di1 a{
+    text-decoration: none;
+    color: white;
+}
+ion-icon{
+    margin: 10px;
+    margin-left: 0px;
+    color: yellow;
+}
+.fin ion-icon:hover{
+    color: #03a9f4;
+}
+.div2{
+    padding: 30px;
+    margin-left: 20px;
+    display: flex;
+}
+.d{
+    width: 30%;
+    margin: auto;
+    text-align: left;
+    font-size: 80%;
+}
+.d div{
+    margin: 5px;
+}
+.d div:hover{
+    color: #03a9f4;
+    cursor: pointer;
+}
+.k{
+    margin: auto;
+    text-align: center;
+}
+hr{
+    width: 80%;
+    margin: auto;
+}
+.k p{
+    font-size: 75%;
+    margin: 5px;
+    margin-bottom: -8px;
+}

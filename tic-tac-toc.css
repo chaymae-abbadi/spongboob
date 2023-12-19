@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #a2d6f9;
+    height: auto;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    color: #a2d6f9;
+}
+
+.container{
+    position: absolute;
+    width: 600px;
+    height: 700px;
+    top: 35%;
+    margin-top:10px;
+    left: 40%;
+    transform: translate(-40%,-30%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.tools, .stats{
+    width: 600px;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    background: linear-gradient(#072ac8,#1e96fc);
+}
+.symbols i:nth-child(odd){
+    color: #fcf300;
+    
+}
+.reset{
+    cursor: pointer;
+}
+.stats{
+    margin-top: 20px;
+}
+.cells{
+    display: flex;
+}
+.cell{
+    width: 170px;
+    height: 150px;
+    background-color: #072ac8;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 5px 0 rgba(0,0,0,0.5);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6em;
+}
+.player, .draws{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    font-weight: 700;
+    font-size: 0.7em;
+}
+.stats span{
+    color: #febf14;
+}
+#overlay{
+    position: absolute;
+    width: 100%;
+    height: 110vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    display: none;
+}
+#message{
+    position: absolute;
+    height: 30%;
+    min-height: 300px;
+    width: 100%;
+    background: #001c55;
+    z-index:2;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-top:  1px solid #19375b;
+    border-bottom: 1px solid #19375b;
+    box-shadow: 0 10px 20px #000;
+}
+#close{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+#message h2{
+    color: #febf14;
+}
+.div11{
+    font-size: 12px;
+    color: blue; 
+    text-align: right;
+    margin-top: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.a :hover{
+    background-color: #072ac8;
+    color: #a2d6f9;
+}
+.a .about{
+    color: #fcf300;
+}
+.a a{
+    text-decoration: none;
+    margin:5px;
+    border-radius: 30px;
+    padding: 10px;
+    color: blue;
+    background-color: #1e96fc;
+    box-shadow: 5px 5px 5px blue;
+    transition: .8s;
+}
+.toggle ion-icon{
+    color: #0084ff;
+    text-decoration: none;
+}
+.toggle{
+    font-size: 30px;
+    display: none;
+}
+@media screen and (max-width:600px) {
+    .container{
+        width: 60px;
+        height: 600px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%,-50%);
+    }
+    .cell{
+        width: 120px;
+        height: 120px;
+        background-color: #0d1f32;
+        margin: 10px;
+        font-size: 4em;
+    }
+    .tools, .stats{
+        width: 400px;
+        height: 100px;
+    }
+    .div11{
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+        margin-top: 0px;
+    }
+    .a{
+        display: none;
+        margin-top: 30px;
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .a.active, .toggle{
+        display: block;
+    }
+    .toggle{
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+}
